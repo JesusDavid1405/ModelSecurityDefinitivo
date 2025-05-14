@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Entity.Context;
+using System.Linq.Expressions;
 
 namespace Data.Core;
 
@@ -18,7 +19,21 @@ public class DataBase<T> where T: class
     /// <returns>Una lista de todos los registros encontrados.</returns>
     public virtual async Task<IEnumerable<T>> GetAll()
     {
-        return await _context.Set<T>().ToListAsync();
+        var query = _context.Set<T>().AsQueryable();
+
+    // Verifica si la entidad tiene una propiedad IsDeleted de tipo bool
+        var prop = typeof(T).GetProperty("IsDeleted");
+        if (prop != null && prop.PropertyType == typeof(bool))
+        {
+            var parameter = Expression.Parameter(typeof(T), "x");
+            var propertyAccess = Expression.Property(parameter, "IsDeleted");
+            var condition = Expression.Equal(propertyAccess, Expression.Constant(false));
+            var lambda = Expression.Lambda<Func<T, bool>>(condition, parameter);
+
+            query = query.Where(lambda);
+        }
+
+        return await query.ToListAsync();
     }
 
     /// <summary>

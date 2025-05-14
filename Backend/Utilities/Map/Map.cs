@@ -19,6 +19,7 @@ public class Map : Profile
         CreateMap<UserDTO, User>();
         CreateMap<User, UserWriteDTO>();
         CreateMap<UserWriteDTO, User>();
+        CreateMap<User, LoginDTO>();
 
         //Map Person
         CreateMap<Person, PersonDTO>();

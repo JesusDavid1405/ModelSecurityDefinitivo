@@ -1,9 +1,11 @@
 using AutoMapper;
 using Business.Core;
+using Business.Strategies;
 using Data.Core;
 using Data.Repository;
 using Entity.DTOs.Read;
 using Entity.DTOs.Write;
+using Entity.Enums;
 using Entity.Model;
 using Microsoft.Extensions.Logging;
 
@@ -14,13 +16,15 @@ public class UserServices : ServiceBase<UserDTO, User>
     private readonly UserRepository _user;
     private readonly ILogger<UserServices> _logger;
     private readonly IMapper _mapper;
+    private readonly DeleteStrategyFactory<User> _delete;
 
-    public UserServices(DataBase<User> data, UserRepository user,ILogger<UserServices> logger,IMapper mapper)
+    public UserServices(DataBase<User> data, UserRepository user,ILogger<UserServices> logger,IMapper mapper, DeleteStrategyFactory<User> delete)
         :base(data, logger,mapper)
     {
         _user = user;
         _logger = logger;
         _mapper = mapper;
+        _delete = delete;
     }
 
     public override async Task<IEnumerable<UserDTO>> GetAll()
@@ -79,6 +83,12 @@ public class UserServices : ServiceBase<UserDTO, User>
             _logger.LogError(ex, "Error al actualizar entidad {Entity}", typeof(User).Name);
             throw;
         }
+    }
+
+    public async Task Delete(int id, DeleteType tipo)
+    {
+        var strategy = _delete.Create(tipo);
+        await strategy.Delete(id);
     }
 
 }

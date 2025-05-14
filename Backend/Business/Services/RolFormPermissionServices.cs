@@ -1,9 +1,11 @@
 using AutoMapper;
 using Business.Core;
+using Business.Strategies;
 using Data.Core;
 using Data.Repository;
 using Entity.DTOs.Read;
 using Entity.DTOs.Write;
+using Entity.Enums;
 using Entity.Model;
 using Microsoft.Extensions.Logging;
 
@@ -14,13 +16,15 @@ public class RolFormPermissionServices : ServiceBase<RolFormPermissionDTO, RolFo
     private readonly RolFormPermissionRepository _rolFormPermission;
     private readonly ILogger<RolFormPermissionServices> _logger;
     private readonly IMapper _mapper;
+    private readonly DeleteStrategyFactory<RolFormPermission> _deleteFactory;
 
-    public RolFormPermissionServices(DataBase<RolFormPermission> data, RolFormPermissionRepository rolFormPermission,ILogger<RolFormPermissionServices> logger,IMapper mapper)
+    public RolFormPermissionServices(DataBase<RolFormPermission> data, RolFormPermissionRepository rolFormPermission,ILogger<RolFormPermissionServices> logger,IMapper mapper, DeleteStrategyFactory<RolFormPermission> delete)
         :base(data, logger,mapper)
     {
         _rolFormPermission = rolFormPermission;
         _logger = logger;
         _mapper = mapper;
+        _deleteFactory = delete;
     }
 
     public override async Task<IEnumerable<RolFormPermissionDTO>> GetAll()
@@ -79,6 +83,12 @@ public class RolFormPermissionServices : ServiceBase<RolFormPermissionDTO, RolFo
             _logger.LogError(ex, "Error al actualizar entidad {Entity}", typeof(RolFormPermission).Name);
             throw;
         }
+    }
+
+    public async Task Delete(int id, DeleteType tipo)
+    {
+        var strategy = _deleteFactory.Create(tipo);
+        await strategy.Delete(id);
     }
 
 }

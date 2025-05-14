@@ -1,5 +1,6 @@
 using AutoMapper;
 using Data.Core;
+using Entity.Enums;
 using Microsoft.Extensions.Logging;
 
 namespace Business.Core;
@@ -75,41 +76,7 @@ public class ServiceBase<TDto, TEntity> where TEntity : class
         }
     }
 
-    /// <summary>
-    /// Aqui estamos eliminando de forma permanente la entidad T
-    /// </summary>
-    /// <param name="id"></param>
-    /// <returns>Retorna en caso de que todo este bien true, y si falla lanza una exception</returns>
-    public virtual async Task<bool> Delete(int id)
-    {
-        try
-        {
-            return await _data.Delete(id);   
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "Error al eliminar permanentemente el registro con ID {Id} de {Entity}", id, typeof(TEntity).Name);
-            throw;
-        }
-    }
 
-    /// <summary>
-    /// Aqui estamos eliminando la entidad T, cambiando la propiedad IsDeleted de false a true
-    /// </summary>
-    /// <param name="id"></param>
-    /// <returns>Retorna en caso de que todo este bien true, y si falla lanza una exception</returns>
-    public virtual async Task<bool> DeleteLogical(int id)
-    {
-        try
-        {
-            return await _data.DeleteLogical(id); 
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "Error al eliminar lógicamente el registro con ID {Id} de {Entity}", id, typeof(TEntity).Name);
-            throw;
-        }
-    }
     /// <summary>
     /// Aqui esta des-eliminando la entidad T, cambiando la propiedad IsDeleted de true a false
     /// </summary>

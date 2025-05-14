@@ -1,0 +1,16 @@
+C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\bin\Debug\net9.0\Utilities.deps.json
+C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\bin\Debug\net9.0\Utilities.dll
+C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\bin\Debug\net9.0\Utilities.pdb
+C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\bin\Debug\net9.0\Entity.dll
+C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\bin\Debug\net9.0\Entity.pdb
+C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\Utilities.csproj.AssemblyReference.cache
+C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\Utilities.AssemblyInfoInputs.cache
+C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\Utilities.AssemblyInfo.cs
+C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\Utilities.csproj.CoreCompileInputs.cache
+C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\Utilities.sourcelink.json
+C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\Utilities.csproj.Up2Date
+C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\Utilities.dll
+C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\refint\Utilities.dll
+C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\Utilities.pdb
+C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\ref\Utilities.dll

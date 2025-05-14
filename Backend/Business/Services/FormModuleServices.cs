@@ -1,9 +1,11 @@
 using AutoMapper;
 using Business.Core;
+using Business.Strategies;
 using Data.Core;
 using Data.Repository;
 using Entity.DTOs.Read;
 using Entity.DTOs.Write;
+using Entity.Enums;
 using Entity.Model;
 using Microsoft.Extensions.Logging;
 
@@ -14,13 +16,15 @@ public class FormModuleServices : ServiceBase<FormModuleDTO, FormModule>
     private readonly FormModuleRepository _formModule;
     private readonly ILogger<FormModuleServices> _logger;
     private readonly IMapper _mapper;
+    private readonly DeleteStrategyFactory<FormModule> _deleteFactory;
 
-    public FormModuleServices(DataBase<FormModule> data, FormModuleRepository formModule,ILogger<FormModuleServices> logger,IMapper mapper)
+    public FormModuleServices(DataBase<FormModule> data, FormModuleRepository formModule,ILogger<FormModuleServices> logger,IMapper mapper, DeleteStrategyFactory<FormModule> delete)
         :base(data, logger,mapper)
     {
         _formModule = formModule;
         _logger = logger;
         _mapper = mapper;
+        _deleteFactory = delete;
     }
 
     public override async Task<IEnumerable<FormModuleDTO>> GetAll()
@@ -79,6 +83,12 @@ public class FormModuleServices : ServiceBase<FormModuleDTO, FormModule>
             _logger.LogError(ex, "Error al actualizar entidad {Entity}", typeof(FormModule).Name);
             throw;
         }
+    }
+
+    public async Task Delete(int id, DeleteType tipo)
+    {
+        var strategy = _deleteFactory.Create(tipo);
+        await strategy.Delete(id);
     }
 
 }
