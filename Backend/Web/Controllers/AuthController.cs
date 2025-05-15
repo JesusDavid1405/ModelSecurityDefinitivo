@@ -87,7 +87,7 @@ public class AuthController : ControllerBase
             {
                 return NotFound(new
                 {
-                    isSucces = false,
+                    isSuccess = false,
                     message = "El usuario no existe"
                 });
             }
@@ -100,14 +100,14 @@ public class AuthController : ControllerBase
 
             var token = await _jwt.GenerateJWT(dto);
 
-            return Ok(new { isSucces = true, token });
+            return Ok(new { isSuccess = true, token });
         }
         catch(Exception ex)
         {
             _logger.LogWarning(ex, "Error en login con google");
             return BadRequest(new
             {
-                isSucces = false,
+                isSuccess = false,
                 message = ex.Message
             });
         }

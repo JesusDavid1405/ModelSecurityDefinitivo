@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\SENA\\Desktop\\ModelSecurityDefinitivo\\Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCF5C0E-8DB8-4A5E-BA24-9F3DA03E899B}|Web\\Web.csproj|c:\\users\\sena\\desktop\\modelsecuritydefinitivo\\backend\\web\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCF5C0E-8DB8-4A5E-BA24-9F3DA03E899B}|Web\\Web.csproj|solutionrelative:web\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCF5C0E-8DB8-4A5E-BA24-9F3DA03E899B}|Web\\Web.csproj|c:\\users\\sena\\desktop\\modelsecuritydefinitivo\\backend\\web\\extension\\jwtextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCF5C0E-8DB8-4A5E-BA24-9F3DA03E899B}|Web\\Web.csproj|solutionrelative:web\\extension\\jwtextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCF5C0E-8DB8-4A5E-BA24-9F3DA03E899B}|Web\\Web.csproj|c:\\users\\sena\\desktop\\modelsecuritydefinitivo\\backend\\web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCF5C0E-8DB8-4A5E-BA24-9F3DA03E899B}|Web\\Web.csproj|solutionrelative:web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCF5C0E-8DB8-4A5E-BA24-9F3DA03E899B}|Web\\Web.csproj|c:\\users\\sena\\desktop\\modelsecuritydefinitivo\\backend\\web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EBCF5C0E-8DB8-4A5E-BA24-9F3DA03E899B}|Web\\Web.csproj|solutionrelative:web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCF5C0E-8DB8-4A5E-BA24-9F3DA03E899B}|Web\\Web.csproj|c:\\users\\sena\\desktop\\modelsecuritydefinitivo\\backend\\web\\web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EBCF5C0E-8DB8-4A5E-BA24-9F3DA03E899B}|Web\\Web.csproj|solutionrelative:web\\web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "JwtExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\ModelSecurityDefinitivo\\Backend\\Web\\Extension\\JwtExtensions.cs",
+              "RelativeDocumentMoniker": "Web\\Extension\\JwtExtensions.cs",
+              "ToolTip": "C:\\Users\\SENA\\Desktop\\ModelSecurityDefinitivo\\Backend\\Web\\Extension\\JwtExtensions.cs",
+              "RelativeToolTip": "Web\\Extension\\JwtExtensions.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwDEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T21:28:01.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\ModelSecurityDefinitivo\\Backend\\Web\\Program.cs",
+              "RelativeDocumentMoniker": "Web\\Program.cs",
+              "ToolTip": "C:\\Users\\SENA\\Desktop\\ModelSecurityDefinitivo\\Backend\\Web\\Program.cs",
+              "RelativeToolTip": "Web\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T21:27:55.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\ModelSecurityDefinitivo\\Backend\\Web\\appsettings.json",
+              "RelativeDocumentMoniker": "Web\\appsettings.json",
+              "ToolTip": "C:\\Users\\SENA\\Desktop\\ModelSecurityDefinitivo\\Backend\\Web\\appsettings.json",
+              "RelativeToolTip": "Web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-15T21:17:39.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\ModelSecurityDefinitivo\\Backend\\Web\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Web\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\SENA\\Desktop\\ModelSecurityDefinitivo\\Backend\\Web\\Controllers\\AuthController.cs*",
+              "RelativeToolTip": "Web\\Controllers\\AuthController.cs*",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAAAGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T21:13:58.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Web",
+              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\ModelSecurityDefinitivo\\Backend\\Web\\Web.csproj",
+              "RelativeDocumentMoniker": "Web\\Web.csproj",
+              "ToolTip": "C:\\Users\\SENA\\Desktop\\ModelSecurityDefinitivo\\Backend\\Web\\Web.csproj",
+              "RelativeToolTip": "Web\\Web.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-15T21:10:23.374Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
