@@ -47,18 +47,18 @@ public class AuthRepository
 
     }
 
-    // public async Task<User?> GetByEmail(string email)
-    // {
-    //     try
-    //     {
-    //         return await _context.Set<User>()
-    //             .FirstOrDefaultAsync(u => u.Email == email && u.IsDeleted == false); // o sin el IsDeleted si no lo usas
-    //     }
-    //     catch (Exception ex)
-    //     {
-    //         // Aquí puedes loguear el error si tienes un ILogger
-    //         throw new Exception("Error al buscar el usuario por email", ex);
-    //     }
-    // }
+    public async Task<User?> GetByEmail(string email)
+    {
+        try
+        {
+            return await _context.Set<User>()
+                .FirstOrDefaultAsync(u => u.Email == email); // o sin el IsDeleted si no lo usas
+        }
+        catch (Exception ex)
+        {
+            // Aquí puedes loguear el error si tienes un ILogger
+            throw new Exception("Error al buscar el usuario por email", ex);
+        }
+    }
 
 }

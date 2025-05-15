@@ -1,11 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
 using Business.Services;
-using Utilities;
 using Entity.DTOs.Write;
-using Entity.Enums;
 using Utilities.Helpers;
 using Business.JWT;
-using Entity.Model;
+using Data.Repository;
+using Microsoft.AspNetCore.Authorization;
+using Google.Apis.Auth;
 
 namespace Web.Controllers;
 
@@ -16,13 +16,16 @@ public class AuthController : ControllerBase
 {
     private readonly AuthServices _authServices;
     private readonly ILogger<AuthController> _logger;
+    private readonly IConfiguration _configuration;
     private readonly JWTGenerate _jwt;
+    private readonly AuthRepository _repository;
 
-    public AuthController(AuthServices authServices, ILogger<AuthController> logger, JWTGenerate jWT)
+    public AuthController(AuthServices authServices, ILogger<AuthController> logger, JWTGenerate jWT, IConfiguration configuration)
     {
         _authServices = authServices;
         _logger = logger;
         _jwt = jWT;
+        _configuration = configuration;
     }
 
     [HttpPost]
@@ -51,8 +54,7 @@ public class AuthController : ControllerBase
                 return Unauthorized(new { message = "Credenciales inválidas" });
             }
 
-            var rol = await _authServices.getRolUserWithId(result.Id);
-            var token = _jwt.GenerateJWT(result, rol.RolName);
+            var token = _jwt.GenerateJWT(result);
 
             return StatusCode(StatusCodes.Status200OK, new
             {
@@ -66,4 +68,37 @@ public class AuthController : ControllerBase
             return StatusCode(500, new { message = "Error interno del servidor" });
         }
     }
+
+    [HttpPost("google")]
+    public async Task<IActionResult> LoginGoogle([FromBody] GoogleDTO tokenDto)
+    {
+        try
+        {
+            var payload = await GoogleJsonWebSignature.ValidateAsync(tokenDto.Token, new GoogleJsonWebSignature.ValidationSettings
+            {
+                Audience = new[] { _configuration["Google:ClientId"] }
+            });
+
+            var user = await _repository.GetByEmail(payload.Email);
+
+            if(user == null)
+            {
+                return NotFound(new
+                {
+                    isSucces = false,
+                    message = "El usuario no existe"
+                });
+            }
+
+            var dto = new LoginDTO
+            {
+                Email = user.Email,
+                Password = user.Password
+            };
+
+            var token = await _jwt.GenerateJWT(dto);
+
+            return Ok(new { isSucces = true, token });
+        }
+    } 
 }

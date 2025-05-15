@@ -39,18 +39,18 @@ public class AuthServices
     }
 
    public async Task<RolUserDTO> getRolUserWithId(int id)
-    {
-        try
-        {
-            var result = await _AuthRepository.getRolUserWithId(id);
-            var rolUser = _mapper.Map<RolUserDTO>(result);
-            return rolUser;
-        }
-        catch (Exception ex)
-        {
-            // Loguear o manejar el error adecuadamente
-            throw new Exception("Error al obtener el rol del usuario", ex);
-        }
-    }
+   {
+       try
+       {
+           var result = await _AuthRepository.getRolUserWithId(id);
+           var rolUser = _mapper.Map<RolUserDTO>(result);
+           return rolUser;
+       }
+       catch (Exception ex)
+       {
+           // Loguear o manejar el error adecuadamente
+           throw new Exception("Error al obtener el rol del usuario", ex);
+       }
+   }
 
 }

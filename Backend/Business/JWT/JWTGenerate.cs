@@ -6,6 +6,7 @@ using Entity.Model;
 using Microsoft.Extensions.Configuration;
 using System.Text;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
+using Entity.DTOs.Write;
 
 namespace Business.JWT;
 
@@ -17,13 +18,12 @@ public class JWTGenerate
         _configuration = configuration;
     }
 
-    public string GenerateJWT(User user, string rolName)
+    public string GenerateJWT(LoginDTO user)
     {
         var Claims = new List<Claim>
         {
             new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
-            new Claim(ClaimTypes.Email, user.Email),
-            new Claim(ClaimTypes.Role, rolName)
+            new Claim(ClaimTypes.Email, user.Email)
         };
 
         var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:key"]!));

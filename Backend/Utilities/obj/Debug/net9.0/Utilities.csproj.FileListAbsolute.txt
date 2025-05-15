@@ -14,3 +14,19 @@ C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\B
 C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\refint\Utilities.dll
 C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\Utilities.pdb
 C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\ref\Utilities.dll
+C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Utilities\bin\Debug\net9.0\Utilities.deps.json
+C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Utilities\bin\Debug\net9.0\Utilities.dll
+C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Utilities\bin\Debug\net9.0\Utilities.pdb
+C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Utilities\bin\Debug\net9.0\Entity.dll
+C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Utilities\bin\Debug\net9.0\Entity.pdb
+C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\Utilities.csproj.AssemblyReference.cache
+C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\Utilities.AssemblyInfoInputs.cache
+C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\Utilities.AssemblyInfo.cs
+C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\Utilities.csproj.CoreCompileInputs.cache
+C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\Utilities.sourcelink.json
+C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\Utilities.csproj.Up2Date
+C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\Utilities.dll
+C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\refint\Utilities.dll
+C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\Utilities.pdb
+C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\ref\Utilities.dll

@@ -28,6 +28,7 @@ public static class JwtServiceExtensions
                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["Jwt:key"]!))
             };
         });
+
         // .AddGoogle(googleOptions =>
         // {
         //     googleOptions.ClientId = configuration["Google:ClientId"]!;

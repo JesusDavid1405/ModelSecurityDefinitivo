@@ -16,7 +16,7 @@ builder.Services.AddCorsConfiguration(builder.Configuration);
 // DbContext
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConn"));
 });
 
 var app = builder.Build();  
