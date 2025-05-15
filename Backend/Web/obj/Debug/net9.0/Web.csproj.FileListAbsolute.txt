@@ -346,12 +346,6 @@ C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Web\obj\Debug\net9.0\scope
 C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Web\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Web\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Web\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Web\obj\Debug\net9.0\staticwebassets\msbuild.Web.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Web\obj\Debug\net9.0\staticwebassets\msbuild.Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Web\obj\Debug\net9.0\staticwebassets\msbuild.build.Web.props
-C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Web\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.Web.props
-C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Web\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.Web.props
-C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Web\obj\Debug\net9.0\staticwebassets.pack.json
 C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Web\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Web\obj\Debug\net9.0\Web.csproj.Up2Date
 C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Web\obj\Debug\net9.0\Web.dll
@@ -359,3 +353,9 @@ C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Web\obj\Debug\net9.0\refin
 C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Web\obj\Debug\net9.0\Web.pdb
 C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Web\obj\Debug\net9.0\Web.genruntimeconfig.cache
 C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Web\obj\Debug\net9.0\ref\Web.dll
+C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Web\bin\Debug\net9.0\Google.Apis.dll
+C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Web\bin\Debug\net9.0\Google.Apis.Auth.dll
+C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Web\bin\Debug\net9.0\Google.Apis.Core.dll
+C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Web\bin\Debug\net9.0\System.Management.dll
+C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Web\bin\Debug\net9.0\runtimes\win\lib\net7.0\System.Management.dll
+C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Web\obj\Debug\net9.0\staticwebassets.build.json.cache

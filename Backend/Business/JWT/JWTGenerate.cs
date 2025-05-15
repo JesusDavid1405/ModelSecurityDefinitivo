@@ -18,22 +18,21 @@ public class JWTGenerate
         _configuration = configuration;
     }
 
-    public string GenerateJWT(LoginDTO user)
+    public async Task<string> GenerateJWT(LoginDTO user)
     {
         var Claims = new List<Claim>
         {
-            new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
             new Claim(ClaimTypes.Email, user.Email)
         };
 
         var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:key"]!));
-        var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+        var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256Signature);
         int expirationMinutes = int.Parse(_configuration["Jwt:Expirate"]!);
 
         var JwtConfig = new JwtSecurityToken(
             claims: Claims,
-            expires: DateTime.UtcNow.AddMinutes(expirationMinutes),
-            signingCredentials: credentials
+            expires: DateTime.UtcNow.AddMinutes(expirationMinutes)
+            //signingCredentials: credentials
         );
 
         return new JwtSecurityTokenHandler().WriteToken(JwtConfig);

@@ -20,12 +20,13 @@ public class AuthController : ControllerBase
     private readonly JWTGenerate _jwt;
     private readonly AuthRepository _repository;
 
-    public AuthController(AuthServices authServices, ILogger<AuthController> logger, JWTGenerate jWT, IConfiguration configuration)
+    public AuthController(AuthServices authServices, ILogger<AuthController> logger, JWTGenerate jWT, IConfiguration configuration, AuthRepository repository)
     {
         _authServices = authServices;
         _logger = logger;
         _jwt = jWT;
         _configuration = configuration;
+        _repository = repository;
     }
 
     [HttpPost]
@@ -72,8 +73,9 @@ public class AuthController : ControllerBase
     [HttpPost("google")]
     public async Task<IActionResult> LoginGoogle([FromBody] GoogleDTO tokenDto)
     {
-        try
-        {
+        try 
+        { 
+        
             var payload = await GoogleJsonWebSignature.ValidateAsync(tokenDto.Token, new GoogleJsonWebSignature.ValidationSettings
             {
                 Audience = new[] { _configuration["Google:ClientId"] }
@@ -99,6 +101,15 @@ public class AuthController : ControllerBase
             var token = await _jwt.GenerateJWT(dto);
 
             return Ok(new { isSucces = true, token });
+        }
+        catch(Exception ex)
+        {
+            _logger.LogWarning(ex, "Error en login con google");
+            return BadRequest(new
+            {
+                isSucces = false,
+                message = ex.Message
+            });
         }
     } 
 }

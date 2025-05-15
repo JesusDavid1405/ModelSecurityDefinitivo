@@ -22,13 +22,13 @@ public class AuthServices
         _userRepository = userRepository;
     }
 
-    async public Task<User> Login(LoginDTO loginDTO)
+    async public Task<LoginDTO> Login(LoginDTO loginDTO)
     {
         try
         {
             var exists = await _AuthRepository.Login(loginDTO.Email, loginDTO.Password);
 
-            var user = _mapper.Map<User>(exists);
+            var user = _mapper.Map<LoginDTO>(exists);
             return user;
         }
         catch (Exception ex)

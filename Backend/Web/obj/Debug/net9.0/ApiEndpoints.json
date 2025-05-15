@@ -41,6 +41,22 @@
     ]
   },
   {
+    "ContainingType": "Web.Controllers.AuthController",
+    "Method": "LoginGoogle",
+    "RelativePath": "api/Auth/google",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tokenDto",
+        "Type": "Entity.DTOs.Write.GoogleDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Web.Controllers.FormController",
     "Method": "GetAll",
     "RelativePath": "api/Form",
