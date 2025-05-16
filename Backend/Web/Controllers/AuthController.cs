@@ -6,6 +6,7 @@ using Business.JWT;
 using Data.Repository;
 using Microsoft.AspNetCore.Authorization;
 using Google.Apis.Auth;
+using Utilities.Notification.Email;
 
 namespace Web.Controllers;
 
@@ -19,14 +20,23 @@ public class AuthController : ControllerBase
     private readonly IConfiguration _configuration;
     private readonly JWTGenerate _jwt;
     private readonly AuthRepository _repository;
+    private readonly NotificationEmail _email;
 
-    public AuthController(AuthServices authServices, ILogger<AuthController> logger, JWTGenerate jWT, IConfiguration configuration, AuthRepository repository)
+    public AuthController(
+        AuthServices authServices, 
+    ILogger<AuthController> logger, 
+    JWTGenerate jWT, 
+    IConfiguration configuration, 
+    AuthRepository repository,
+    NotificationEmail email
+    )
     {
         _authServices = authServices;
         _logger = logger;
         _jwt = jWT;
         _configuration = configuration;
         _repository = repository;
+        _email = email;
     }
 
     [HttpPost]
@@ -54,8 +64,10 @@ public class AuthController : ControllerBase
             {
                 return Unauthorized(new { message = "Credenciales inválidas" });
             }
-
+            
             var token = _jwt.GenerateJWT(result);
+
+            var email = _email.SendWelcomeEmailAsync(result.Email);
 
             return StatusCode(StatusCodes.Status200OK, new
             {
@@ -91,6 +103,8 @@ public class AuthController : ControllerBase
                     message = "El usuario no existe"
                 });
             }
+
+            _email.SendWelcomeEmailAsync(user.Email);
 
             var dto = new LoginDTO
             {

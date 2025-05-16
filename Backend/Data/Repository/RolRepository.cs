@@ -5,7 +5,7 @@ using Entity.Model;
 
 namespace Data.Repository;
 
-public class RolRepository : DataBase<Rol>, IRol
+public class RolRepository : DataBase<Rol>, IRolRepository
 {
     public RolRepository(ApplicationDbContext context)
     : base(context) {}

@@ -1,12 +1,13 @@
 using System.Runtime.Intrinsics.X86;
 using Data.Core;
+using Data.Interface;
 using Entity.Context;
 using Entity.Model;
 using Microsoft.EntityFrameworkCore;
 
 namespace Data.Repository;
 
-public class FormModuleRepository : DataBase<FormModule>
+public class FormModuleRepository : DataBase<FormModule>, IFormModuleRepository
 {
     private readonly ApplicationDbContext _context;
 

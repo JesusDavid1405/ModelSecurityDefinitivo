@@ -1,11 +1,12 @@
 using Data.Core;
+using Data.Interface;
 using Entity.Context;
 using Entity.Model;
 using Microsoft.EntityFrameworkCore;
 
 namespace Data.Repository;
 
-public class RolUserRepository : DataBase<RolUser>
+public class RolUserRepository : DataBase<RolUser>, IRolUserRepository
 {
     private readonly ApplicationDbContext _context;
 

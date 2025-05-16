@@ -1,4 +1,5 @@
 using AutoMapper;
+using Business.Interface;
 using Data.Repository;
 using Entity.DTOs.Read;
 using Entity.DTOs.Write;
@@ -7,7 +8,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Business.Services;
 
-public class AuthServices
+public class AuthServices : IAuthServices
 {
     private readonly AuthRepository _AuthRepository;
     private readonly UserRepository _userRepository;

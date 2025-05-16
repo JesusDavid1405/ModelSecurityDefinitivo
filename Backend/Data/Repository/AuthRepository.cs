@@ -1,3 +1,4 @@
+using Data.Interface;
 using Entity.Context;
 using Entity.Model;
 using Microsoft.EntityFrameworkCore;
@@ -5,7 +6,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Data.Repository;
 
-public class AuthRepository
+public class AuthRepository : IAuthRepository
 {
     private readonly ILogger<AuthRepository> _logger;  
     private readonly ApplicationDbContext _context;

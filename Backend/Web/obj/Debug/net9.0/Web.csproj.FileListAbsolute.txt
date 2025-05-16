@@ -359,3 +359,13 @@ C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Web\bin\Debug\net9.0\Googl
 C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Web\bin\Debug\net9.0\System.Management.dll
 C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Web\bin\Debug\net9.0\runtimes\win\lib\net7.0\System.Management.dll
 C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Web\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Web\bin\Debug\net9.0\BouncyCastle.Cryptography.dll
+C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Web\bin\Debug\net9.0\Google.Apis.dll
+C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Web\bin\Debug\net9.0\Google.Apis.Auth.dll
+C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Web\bin\Debug\net9.0\Google.Apis.Core.dll
+C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Web\bin\Debug\net9.0\MailKit.dll
+C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Web\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.Google.dll
+C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Web\bin\Debug\net9.0\MimeKit.dll
+C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Web\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Web\bin\Debug\net9.0\System.Management.dll
+C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Web\bin\Debug\net9.0\runtimes\win\lib\net7.0\System.Management.dll

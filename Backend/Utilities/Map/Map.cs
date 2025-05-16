@@ -18,7 +18,9 @@ public class Map : Profile
         );
         CreateMap<UserDTO, User>();
         CreateMap<User, UserWriteDTO>();
-        CreateMap<UserWriteDTO, User>();
+        CreateMap<UserWriteDTO, User>()
+            .ForMember(dest => dest.Person, opt => opt.Ignore())
+            .ForMember(dest => dest.RolUsers, opt => opt.Ignore());
         CreateMap<User, LoginDTO>();
 
         //Map Person

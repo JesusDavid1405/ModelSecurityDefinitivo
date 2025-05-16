@@ -1,5 +1,6 @@
 using AutoMapper;
 using Business.Core;
+using Business.Interface;
 using Business.Strategies;
 using Data.Core;
 using Data.Repository;
@@ -11,7 +12,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Business.Services;
 
-public class RolFormPermissionServices : ServiceBase<RolFormPermissionDTO, RolFormPermission>
+public class RolFormPermissionServices : ServiceBase<RolFormPermissionDTO, RolFormPermission>, IRolFormPermissionServices
 {
     private readonly RolFormPermissionRepository _rolFormPermission;
     private readonly ILogger<RolFormPermissionServices> _logger;

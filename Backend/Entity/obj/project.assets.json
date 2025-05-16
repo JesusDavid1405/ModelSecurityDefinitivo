@@ -4745,23 +4745,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SENA\\.nuget\\packages\\": {},
+    "C:\\Users\\dfier\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SENA\\Desktop\\ModelSecurityDefinitivo\\Backend\\Entity\\Entity.csproj",
+      "projectUniqueName": "C:\\Users\\dfier\\OneDrive\\Desktop\\practicas lenguajes\\c#\\ModelSecurityDefinitivo\\Backend\\Entity\\Entity.csproj",
       "projectName": "Entity",
-      "projectPath": "C:\\Users\\SENA\\Desktop\\ModelSecurityDefinitivo\\Backend\\Entity\\Entity.csproj",
-      "packagesPath": "C:\\Users\\SENA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SENA\\Desktop\\ModelSecurityDefinitivo\\Backend\\Entity\\obj\\",
+      "projectPath": "C:\\Users\\dfier\\OneDrive\\Desktop\\practicas lenguajes\\c#\\ModelSecurityDefinitivo\\Backend\\Entity\\Entity.csproj",
+      "packagesPath": "C:\\Users\\dfier\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dfier\\OneDrive\\Desktop\\practicas lenguajes\\c#\\ModelSecurityDefinitivo\\Backend\\Entity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\SENA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dfier\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4788,7 +4788,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net9.0": {
@@ -4835,7 +4835,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

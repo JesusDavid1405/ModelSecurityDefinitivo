@@ -1,5 +1,6 @@
 using AutoMapper;
 using Business.Core;
+using Business.Interface;
 using Business.Strategies;
 using Data.Core;
 using Data.Repository;
@@ -10,7 +11,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Business.Services;
 
-public class PermissionServices : ServiceBase<PermissionDTO, Permission>
+public class PermissionServices : ServiceBase<PermissionDTO, Permission>, IPermissionServices
 {
     private readonly PermissionRepository _permission;
     private readonly ILogger<PermissionServices> _logger;

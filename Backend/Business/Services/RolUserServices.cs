@@ -1,5 +1,6 @@
 using AutoMapper;
 using Business.Core;
+using Business.Interface;
 using Business.Strategies;
 using Data.Core;
 using Data.Repository;
@@ -11,7 +12,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Business.Services;
 
-public class RolUserServices : ServiceBase<RolUserDTO, RolUser>
+public class RolUserServices : ServiceBase<RolUserDTO, RolUser>, IRolUserServices
 {
     private readonly RolUserRepository _rolUser;
     private readonly ILogger<RolUserServices> _logger;

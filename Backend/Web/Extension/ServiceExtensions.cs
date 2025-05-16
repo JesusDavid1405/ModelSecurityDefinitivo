@@ -1,9 +1,12 @@
+using Business.Interface;
 using Business.JWT;
 using Business.Services;
 using Business.Strategies;
 using Data.Core;
+using Data.Interface;
 using Data.Repository;
 using Microsoft.Extensions.DependencyInjection;
+using Utilities.Notification.Email;
 
 namespace Microsoft.Extensions.DependencyInjection;
 
@@ -37,6 +40,7 @@ public static  class ServiceExtensions
 
         // Utilidades
         services.AddScoped<JWTGenerate>();
+        services.AddScoped<NotificationEmail>();
 
         // Genéricos
         services.AddScoped(typeof(DataBase<>), typeof(DataBase<>));

@@ -1,5 +1,6 @@
 using AutoMapper;
 using Business.Core;
+using Business.Interface;
 using Business.Strategies;
 using Data.Core;
 using Data.Repository;
@@ -10,7 +11,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Business.Services;
 
-public class ModuleServices : ServiceBase<ModuleDTO, Module>
+public class ModuleServices : ServiceBase<ModuleDTO, Module>, IModuleServices
 {
     private readonly ModuleRepository _module;
     private readonly ILogger<ModuleServices> _logger;

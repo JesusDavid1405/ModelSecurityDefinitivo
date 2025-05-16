@@ -1,5 +1,6 @@
 using AutoMapper;
 using Business.Core;
+using Business.Interface;
 using Business.Strategies;
 using Data.Core;
 using Data.Repository;
@@ -11,7 +12,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Business.Services;
 
-public class UserServices : ServiceBase<UserDTO, User>
+public class UserServices : ServiceBase<UserDTO, User>, IUserServices
 {
     private readonly UserRepository _user;
     private readonly ILogger<UserServices> _logger;
@@ -70,13 +71,14 @@ public class UserServices : ServiceBase<UserDTO, User>
         }
     }
     
-    public async Task<UserWriteDTO> Update(UserWriteDTO dto)
+    public async Task<bool> Update(UserWriteDTO dto)
     {
         try
         {
             var entity = _mapper.Map<User>(dto);
             var entities = await _user.Update(entity);
-            return _mapper.Map<UserWriteDTO>(entities);
+            return true;
+
         }
         catch (Exception ex)
         {

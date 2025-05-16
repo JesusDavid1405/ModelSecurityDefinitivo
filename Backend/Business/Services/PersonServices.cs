@@ -1,6 +1,7 @@
     using AutoMapper;
     using Business.Core;
-    using Business.Strategies;
+using Business.Interface;
+using Business.Strategies;
     using Data.Core;
     using Data.Repository;
     using Entity.DTOs.Read;
@@ -10,7 +11,7 @@
 
     namespace Business.Services;
 
-    public class PersonServices : ServiceBase<PersonDTO, Person>
+    public class PersonServices : ServiceBase<PersonDTO, Person>, IPersonServices
     {
         private readonly PersonRepository _persona;
         private readonly ILogger<PersonServices> _logger;
