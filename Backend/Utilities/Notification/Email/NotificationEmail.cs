@@ -1,13 +1,21 @@
 using MailKit.Net.Smtp;
 using MimeKit;
 using MailKit.Security;
+using Microsoft.Extensions.Configuration;
 
 namespace Utilities.Notification.Email;
 
 public class NotificationEmail
 {
-    private readonly string _fromEmail = "jesusdavidfierrorivera817@gmail.com";
+    private readonly IConfiguration _configuration;
+    private readonly string _fromEmail;
     private readonly string _fromName = "RappiGestion";
+
+    public NotificationEmail(IConfiguration configuration)
+    {
+        _configuration = configuration;
+        _fromEmail = _configuration["EmailMessage:email"]!;
+    }
 
     public async Task SendWelcomeEmailAsync(string to)
     {
@@ -71,7 +79,7 @@ public class NotificationEmail
             await client.ConnectAsync("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
 
             Console.WriteLine("🔐 Autenticando...");
-            await client.AuthenticateAsync(_fromEmail, "gsgf xhkg fkft sqsb"); // ⚠️ REEMPLAZA por variable de entorno o secreto seguro
+            await client.AuthenticateAsync(_fromEmail, _configuration["EmailMessage:password"]);
 
             Console.WriteLine("📤 Enviando mensaje...");
             await client.SendAsync(message);

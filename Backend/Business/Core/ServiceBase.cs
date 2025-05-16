@@ -61,13 +61,13 @@ public class ServiceBase<TDto, TEntity> where TEntity : class
         }
     }
     
-    public virtual async Task<TDto> Update(TDto dto)
+    public virtual async Task<bool> Update(TDto dto)
     {
         try
         {
             var entity = _mapper.Map<TEntity>(dto);
             var entities = await _data.Update(entity);
-            return _mapper.Map<TDto>(entities);
+            return true;
         }
         catch (Exception ex)
         {

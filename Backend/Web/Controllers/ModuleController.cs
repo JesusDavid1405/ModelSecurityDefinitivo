@@ -102,7 +102,7 @@ public class ModuleController : ControllerBase
 
 
     [HttpPut]
-    [ProducesResponseType(typeof(PersonDTO), 200)]
+    [ProducesResponseType(typeof(ModuleDTO), 200)]
     [ProducesResponseType(400)]
     [ProducesResponseType(404)]
     [ProducesResponseType(500)]

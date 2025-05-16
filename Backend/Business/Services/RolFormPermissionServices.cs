@@ -71,13 +71,13 @@ public class RolFormPermissionServices : ServiceBase<RolFormPermissionDTO, RolFo
         }
     }
     
-    public async Task<RolFormPermissionWriteDTO> Update(RolFormPermissionWriteDTO dto)
+    public async Task<bool> Update(RolFormPermissionWriteDTO dto)
     {
         try
         {
             var entity = _mapper.Map<RolFormPermission>(dto);
             var entities = await _rolFormPermission.Update(entity);
-            return _mapper.Map<RolFormPermissionWriteDTO>(entities);
+            return true;
         }
         catch (Exception ex)
         {

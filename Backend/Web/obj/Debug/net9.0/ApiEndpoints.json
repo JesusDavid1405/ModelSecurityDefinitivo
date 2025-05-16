@@ -449,7 +449,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Entity.DTOs.Read.PersonDTO",
+        "Type": "Entity.DTOs.Read.ModuleDTO",
         "MediaTypes": [
           "application/json"
         ],

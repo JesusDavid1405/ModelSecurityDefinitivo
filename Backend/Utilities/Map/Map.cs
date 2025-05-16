@@ -21,6 +21,7 @@ public class Map : Profile
         CreateMap<UserWriteDTO, User>()
             .ForMember(dest => dest.Person, opt => opt.Ignore())
             .ForMember(dest => dest.RolUsers, opt => opt.Ignore());
+
         CreateMap<User, LoginDTO>();
 
         //Map Person
@@ -45,7 +46,6 @@ public class Map : Profile
 
         //Map RolUser
         CreateMap<RolUser, RolUserDTO>()
-        //configurando Map para que tome algun valor de Rol y User y lo guarde en el Dto
         .ForMember(
             dest => dest.RolName,
             opt => opt.MapFrom(src => src.Rol != null ? src.Rol.Name: null) 
@@ -60,7 +60,6 @@ public class Map : Profile
 
         //Map FormModule
         CreateMap<FormModule, FormModuleDTO>()
-        //configurando Map para que tome algun valor de Form y Module y lo guarde en el Dto
         .ForMember(
             dest => dest.FormName,
             opt => opt.MapFrom(src => src.Form != null ? src.Form.Name: null) 
@@ -75,7 +74,6 @@ public class Map : Profile
 
         //Map RolFormPermission
         CreateMap<RolFormPermission, RolFormPermissionDTO>()
-        //configurando Map para que tome algun valor de Rol, Form y Permission y lo guarde en el Dto
         .ForMember(
             dest => dest.RolName,
             opt => opt.MapFrom(src => src.Rol != null ? src.Rol.Name: null) 
@@ -83,7 +81,7 @@ public class Map : Profile
         .ForMember(
             dest => dest.FormName,
             opt => opt.MapFrom(src => src.Form != null ? src.Form.Name: null) 
-        )
+        )   
         .ForMember(
             dest => dest.PermissionName,
             opt => opt.MapFrom(src => src.Permission != null ? src.Permission.Name: null) 

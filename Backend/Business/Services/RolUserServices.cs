@@ -71,13 +71,13 @@ public class RolUserServices : ServiceBase<RolUserDTO, RolUser>, IRolUserService
         }
     }
     
-    public virtual async Task<RolUserWriteDTO> Update(RolUserWriteDTO dto)
+    public virtual async Task<bool> Update(RolUserWriteDTO dto)
     {
         try
         {
             var entity = _mapper.Map<RolUser>(dto);
             var entities = await _rolUser.Update(entity);
-            return _mapper.Map<RolUserWriteDTO>(entities);
+            return true;
         }
         catch (Exception ex)
         {

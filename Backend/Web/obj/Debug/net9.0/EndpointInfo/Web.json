@@ -600,7 +600,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PersonDTO"
+                  "$ref": "#/components/schemas/ModuleDTO"
                 }
               }
             }
@@ -1954,6 +1954,9 @@
           "url": {
             "type": "string",
             "nullable": true
+          },
+          "isDeleted": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false
@@ -2014,6 +2017,9 @@
           "description": {
             "type": "string",
             "nullable": true
+          },
+          "isDeleted": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false
@@ -2032,6 +2038,9 @@
           "description": {
             "type": "string",
             "nullable": true
+          },
+          "isDeleted": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false
@@ -2066,6 +2075,9 @@
           "address": {
             "type": "string",
             "nullable": true
+          },
+          "isDeleted": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false
@@ -2111,6 +2123,9 @@
           "description": {
             "type": "string",
             "nullable": true
+          },
+          "isDeleted": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false
@@ -2177,6 +2192,9 @@
           "password": {
             "type": "string",
             "nullable": true
+          },
+          "isDeleted": {
+            "type": "boolean"
           },
           "createdDate": {
             "type": "string",

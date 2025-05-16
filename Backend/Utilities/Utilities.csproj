@@ -11,4 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Entity\Entity.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Notification\Interface\" />
+  </ItemGroup>
 </Project>

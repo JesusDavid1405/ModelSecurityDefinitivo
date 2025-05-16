@@ -71,13 +71,13 @@ public class FormModuleServices : ServiceBase<FormModuleDTO, FormModule>, IFormM
         }
     }
     
-    public async Task<FormModuleWriteDTO> Update(FormModuleWriteDTO dto)
+    public async Task<bool> Update(FormModuleWriteDTO dto)
     {
         try
         {
             var entity = _mapper.Map<FormModule>(dto);
             var entities = await _formModule.Update(entity);
-            return _mapper.Map<FormModuleWriteDTO>(entities);
+            return true;
         }
         catch (Exception ex)
         {
