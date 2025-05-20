@@ -5,10 +5,12 @@ using Utilities;
 using Utilities.Helpers;
 using Entity.DTOs.Write;
 using Entity.Enums;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Web.Controllers;
 
 [Route("api/[controller]")]
+[Authorize]
 [ApiController]
 [Produces("application/json")]
 public class UserController : ControllerBase
@@ -84,7 +86,7 @@ public class UserController : ControllerBase
                 return BadRequest(new { message = "El correo electrónico proporcionado no es válido." });
             }
 
-            if (!ValitadionHelpers.IsValidPassword(dto.Password))
+            if (!PasswordHelpers.IsValidPassword(dto.Password))
             {
                 return BadRequest(new { message = "La contraseña debe tener al menos 8 caracteres, un número y un carácter especial (_ . -)." });
             }
@@ -124,7 +126,7 @@ public class UserController : ControllerBase
                 return BadRequest(new { message = "El correo electrónico proporcionado no es válido." });
             }
 
-            if (!ValitadionHelpers.IsValidPassword(dto.Password))
+            if (!PasswordHelpers.IsValidPassword(dto.Password))
             {
                 return BadRequest(new { message = "La contraseña debe tener al menos 8 caracteres, un número y un carácter especial (_ . -)." });
             }

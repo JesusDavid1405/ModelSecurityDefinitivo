@@ -1,18 +1,3 @@
-C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Entity\bin\Debug\net9.0\Entity.deps.json
-C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Entity\bin\Debug\net9.0\Entity.runtimeconfig.json
-C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Entity\bin\Debug\net9.0\Entity.dll
-C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Entity\bin\Debug\net9.0\Entity.pdb
-C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Entity\obj\Debug\net9.0\Entity.csproj.AssemblyReference.cache
-C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Entity\obj\Debug\net9.0\Entity.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Entity\obj\Debug\net9.0\Entity.AssemblyInfoInputs.cache
-C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Entity\obj\Debug\net9.0\Entity.AssemblyInfo.cs
-C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Entity\obj\Debug\net9.0\Entity.csproj.CoreCompileInputs.cache
-C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Entity\obj\Debug\net9.0\Entity.sourcelink.json
-C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Entity\obj\Debug\net9.0\Entity.dll
-C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Entity\obj\Debug\net9.0\refint\Entity.dll
-C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Entity\obj\Debug\net9.0\Entity.pdb
-C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Entity\obj\Debug\net9.0\Entity.genruntimeconfig.cache
-C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Entity\obj\Debug\net9.0\ref\Entity.dll
 C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Entity\bin\Debug\net9.0\Entity.deps.json
 C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Entity\bin\Debug\net9.0\Entity.runtimeconfig.json
 C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Entity\bin\Debug\net9.0\Entity.dll
@@ -28,3 +13,18 @@ C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Entity\obj\Debug\net9.0\re
 C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Entity\obj\Debug\net9.0\Entity.pdb
 C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Entity\obj\Debug\net9.0\Entity.genruntimeconfig.cache
 C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Entity\obj\Debug\net9.0\ref\Entity.dll
+c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Entity\bin\Debug\net9.0\Entity.deps.json
+c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Entity\bin\Debug\net9.0\Entity.runtimeconfig.json
+c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Entity\bin\Debug\net9.0\Entity.dll
+c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Entity\bin\Debug\net9.0\Entity.pdb
+c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Entity\obj\Debug\net9.0\Entity.csproj.AssemblyReference.cache
+c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Entity\obj\Debug\net9.0\Entity.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Entity\obj\Debug\net9.0\Entity.AssemblyInfoInputs.cache
+c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Entity\obj\Debug\net9.0\Entity.AssemblyInfo.cs
+c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Entity\obj\Debug\net9.0\Entity.csproj.CoreCompileInputs.cache
+c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Entity\obj\Debug\net9.0\Entity.sourcelink.json
+c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Entity\obj\Debug\net9.0\Entity.dll
+c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Entity\obj\Debug\net9.0\refint\Entity.dll
+c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Entity\obj\Debug\net9.0\Entity.pdb
+c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Entity\obj\Debug\net9.0\Entity.genruntimeconfig.cache
+c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Entity\obj\Debug\net9.0\ref\Entity.dll

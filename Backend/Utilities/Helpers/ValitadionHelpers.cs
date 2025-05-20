@@ -21,21 +21,6 @@ public class ValitadionHelpers
     public static bool IsNumeric(string input) =>
         double.TryParse(input, out _);
 
-    /// <summary>
-    /// Valida si una contraseña cumple con los siguientes requisitos:
-    /// - Mínimo 8 caracteres
-    /// - Al menos un número
-    /// - Al menos uno de los siguientes caracteres especiales: _ . -
-    /// </summary>
-    public static bool IsValidPassword(string password)
-    {
-        if (string.IsNullOrWhiteSpace(password)) return false;
-
-        var pattern = @"^(?=.*\d)(?=.*[_\.\-])[A-Za-z\d_\.\-]{8,}$";
-
-        return Regex.IsMatch(password, pattern);
-    }
-
 
     /// <summary>
     /// Valida si el número de documento tiene el formato correcto (ej: Cédula de ciudadanía, DNI, etc.)

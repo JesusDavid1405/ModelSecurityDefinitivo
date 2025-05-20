@@ -5,10 +5,12 @@ using Entity.DTOs.Read;
 using Utilities;
 using Entity.Enums;
 using Utilities.Helpers;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Web.Controllers;
 
 [Route("api/[controller]")]
+[Authorize]
 [ApiController]
 [Produces("application/json")]
 public class RolController : ControllerBase

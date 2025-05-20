@@ -26,13 +26,13 @@ public class JWTGenerate
         };
 
         var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:key"]!));
-        var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256Signature);
+        var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
         int expirationMinutes = int.Parse(_configuration["Jwt:Expirate"]!);
 
         var JwtConfig = new JwtSecurityToken(
             claims: Claims,
-            expires: DateTime.UtcNow.AddMinutes(expirationMinutes)
-            //signingCredentials: credentials
+            expires: DateTime.UtcNow.AddMinutes(expirationMinutes),
+            signingCredentials: credentials
         );
 
         return new JwtSecurityTokenHandler().WriteToken(JwtConfig);

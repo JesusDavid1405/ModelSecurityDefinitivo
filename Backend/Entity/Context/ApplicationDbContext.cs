@@ -8,7 +8,7 @@ public class ApplicationDbContext : DbContext
 {
     protected readonly IConfiguration _configuration;
 
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options, IConfiguration configuration) 
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options, IConfiguration configuration)
         : base(options)
     {
         _configuration = configuration;
@@ -23,5 +23,20 @@ public class ApplicationDbContext : DbContext
     public DbSet<User> User { get; set; }
     public DbSet<FormModule> FormModule { get; set; }
     public DbSet<RolFormPermission> RolFormPermission { get; set; }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+        
+        modelBuilder.Entity<Rol>().ToTable("Rol", schema: "seguridad");
+        modelBuilder.Entity<Module>().ToTable("Module", schema: "seguridad");
+        modelBuilder.Entity<Permission>().ToTable("Permission", schema: "seguridad");
+        modelBuilder.Entity<Form>().ToTable("Form", schema: "seguridad");
+        modelBuilder.Entity<Person>().ToTable("Person", schema: "seguridad");
+        modelBuilder.Entity<User>().ToTable("User", schema: "seguridad");
+        modelBuilder.Entity<RolUser>().ToTable("RolUser", schema: "seguridad");
+        modelBuilder.Entity<FormModule>().ToTable("FormModule", schema: "seguridad");
+        modelBuilder.Entity<RolFormPermission>().ToTable("RolFormPermission", schema: "seguridad");
+    }
 
 }

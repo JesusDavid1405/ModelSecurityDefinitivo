@@ -38,6 +38,26 @@ namespace Entity.DataInit
                 await _context.Module.AddRangeAsync(Modules);
             }
 
+            if (!_context.Permission.Any())
+            {
+                var permissions = new[]
+                {
+                    new Permission {Name = "Crear Usuario", Description = "Permiso de crear Usuarios"},
+                    new Permission {Name = "Editar Usuarios", Description = "Permiso de crear Usuarios"},
+                };
+                await _context.Permission.AddRangeAsync(permissions);
+            }
+
+            if (!_context.Form.Any())
+            {
+                var Forms = new[]
+                {
+                    new Form {Name = "Crear User", Url = "user/create",Description = "Formulario para crear Usuarios"},
+                    new Form {Name = "Editar User",  Url = "user/edit=?id",Description = "Formulario para editar Usuarios"},
+                };
+                await _context.Form.AddRangeAsync(Forms);
+            }
+
             if (_context.Person.Any())
             {
                 var Persons = new[]
@@ -59,17 +79,47 @@ namespace Entity.DataInit
 
             if (!_context.User.Any())
             {
-                var usuarios = new[]
+                var usuers = new[]
                 {
-                    new User {Email = "juan@ejemplo.com", 
-                        Password = "juan1234_", 
-                        CreatedDate = DateTime.UtcNow, 
-                        Active = true, 
+                    new User {Email = "juan@ejemplo.com",
+                        Password = "juan1234_",
+                        CreatedDate = DateTime.UtcNow,
+                        Active = true,
                         IsDeleted = false
                     },
                 };
 
-                await _context.User.AddRangeAsync(usuarios);
+                await _context.User.AddRangeAsync(usuers);
+            }
+
+            if (!_context.RolUser.Any())
+            {
+                var rolUsers = new[]
+                {
+                    new RolUser{ RolId = 1, UserId = 1}
+                };
+
+                await _context.RolUser.AddRangeAsync(rolUsers);
+            }
+
+            if (!_context.FormModule.Any())
+            {
+                var formModules = new[]
+                {
+                    new FormModule{ FormId = 1, ModuleId = 1}
+                };
+
+                await _context.FormModule.AddRangeAsync(formModules);
+            }
+
+            if (!_context.RolFormPermission.Any())
+            {
+                var rolFormPermissions = new[]
+                {
+                    new RolFormPermission{RolId = 1 , FormId = 1, PermissionId = 1}
+                };
+
+                await _context.RolFormPermission.AddRangeAsync(rolFormPermissions);
             }
             
         }

@@ -8,7 +8,7 @@ namespace Data.Repository;
 
 public class AuthRepository : IAuthRepository
 {
-    private readonly ILogger<AuthRepository> _logger;  
+    private readonly ILogger<AuthRepository> _logger;
     private readonly ApplicationDbContext _context;
 
     public AuthRepository(ILogger<AuthRepository> logger, ApplicationDbContext context)
@@ -17,7 +17,7 @@ public class AuthRepository : IAuthRepository
         _context = context;
     }
 
-   // En el Repository:
+
     public async Task<User?> Login(string email, string password)
     {
         try
@@ -59,6 +59,34 @@ public class AuthRepository : IAuthRepository
         {
             // Aquí puedes loguear el error si tienes un ILogger
             throw new Exception("Error al buscar el usuario por email", ex);
+        }
+    }
+
+    public async Task<Person> AddPerson(Person person)
+    {
+        try
+        {
+            person.IsDeleted = false;
+            await _context.Set<Person>().AddAsync(person);
+            await _context.SaveChangesAsync();
+            return person;
+        }
+        catch (Exception ex) {
+            throw new Exception("Error al crear la Persona", ex);
+        }
+    }
+
+    public async Task<bool> AddUser(User user)
+    {
+        try
+        {
+            user.IsDeleted = false;
+            var persons = await _context.Set<User>().AddAsync(user);
+            await _context.SaveChangesAsync();
+            return true;
+        }
+        catch (Exception ex) {
+            throw new Exception("Error al crear el Usuario", ex);
         }
     }
 
