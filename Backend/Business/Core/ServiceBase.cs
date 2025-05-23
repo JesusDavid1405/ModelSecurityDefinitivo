@@ -1,77 +1,78 @@
+using System.Buffers.Text;
 using AutoMapper;
 using Data.Core;
 using Entity.Enums;
+using Entity.Model;
 using Microsoft.Extensions.Logging;
 
 namespace Business.Core;
 
-public class ServiceBase<TDto, TEntity> where TEntity : class
+public class ServiceBase<D, T> : AServiceBase<D, T> where T : BaseModel where D : class
 {
-    private readonly DataBase<TEntity> _data;
+    private readonly DataBase<T> _data;
     private readonly ILogger _logger;
     private readonly IMapper _mapper;
 
-    public ServiceBase(DataBase<TEntity> data, ILogger logger, IMapper mapper)
+    public ServiceBase(DataBase<T> data, ILogger logger, IMapper mapper)
     {
         _data = data;
         _logger = logger;
         _mapper = mapper;
     }
 
-    public virtual async Task<IEnumerable<TDto>> GetAll()
+    public override async Task<IEnumerable<D>> GetAll()
     {
         try
         {
             var entities = await _data.GetAll();
-            return _mapper.Map<IEnumerable<TDto>>(entities);
+            return _mapper.Map<IEnumerable<D>>(entities);
         }
         catch (Exception ex)
         {
-            _logger.LogError(ex, "Error al obtener todos los registros de {Entity}", typeof(TEntity).Name);
+            _logger.LogError(ex, "Error al obtener todos los registros de {Entity}", typeof(T).Name);
             throw;
         }
     }
-
-    public virtual async Task<TDto?> getById(int id)
+    public override async Task<D?> getById(int id)
     {
         try
         {
             var entities = await _data.GetById(id);
-            return _mapper.Map<TDto>(entities);
+            return _mapper.Map<D>(entities);
         }
         catch (Exception ex)
         {
-            _logger.LogError(ex, "Error al obtener el registro con ID {Id} de {Entity}", id, typeof(TEntity).Name);
+            _logger.LogError(ex, "Error al obtener el registro con ID {Id} de {Entity}", id, typeof(T).Name);
             throw;
         }
     }
 
-    public virtual async Task<TDto> Create(TDto dto)
+    public override async Task<D> Create(D dto)
     {
         try
         {
-            var entity = _mapper.Map<TEntity>(dto);
+            var entity = _mapper.Map<T>(dto);
             var entities = await _data.Add(entity);
-            return _mapper.Map<TDto>(entities);
+            return _mapper.Map<D>(entities);
         }
         catch (Exception ex)
         {
-            _logger.LogError(ex, "Error al crear entidad {Entity}", typeof(TEntity).Name);
+            _logger.LogError(ex, "Error al crear entidad {Entity}", typeof(T).Name);
             throw;
         }
     }
     
-    public virtual async Task<bool> Update(TDto dto)
+    public override async Task<bool> Update(D dto)
     {
         try
         {
-            var entity = _mapper.Map<TEntity>(dto);
+            var entity = _mapper.Map<T>(dto);
             var entities = await _data.Update(entity);
             return true;
         }
         catch (Exception ex)
         {
-            _logger.LogError(ex, "Error al actualizar entidad {Entity}", typeof(TEntity).Name);
+            _logger.LogError(ex, "Error al actualizar entidad {Entity}", typeof(T).Name);
             throw;
         }
     }
@@ -82,7 +83,7 @@ public class ServiceBase<TDto, TEntity> where TEntity : class
     /// </summary>
     /// <param name="id"></param>
     /// <returns>Retorna en caso de que todo este bien true, y si falla lanza una exception</returns>
-    public virtual async Task<bool> Reactivate(int id)
+    public override async Task<bool> Reactivate(int id)
     {
         try
         {
@@ -90,7 +91,7 @@ public class ServiceBase<TDto, TEntity> where TEntity : class
         }
         catch (Exception ex)
         {
-            _logger.LogError(ex, "Error al Des-Elimnar el registro con ID {Id} de {Entity}", id, typeof(TEntity).Name);
+            _logger.LogError(ex, "Error al Des-Elimnar el registro con ID {Id} de {Entity}", id, typeof(T).Name);
             throw;
         }
     }

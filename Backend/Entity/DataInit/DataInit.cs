@@ -70,7 +70,7 @@ namespace Entity.DataInit
                         DocumentNumber = "12345678",
                         Phone = "123-456-7890",
                         Address = "Calle Falsa 123",
-                        IsDeleted = false
+                        IsDelete = false
                     }
                 };
 
@@ -85,7 +85,7 @@ namespace Entity.DataInit
                         Password = "juan1234_",
                         CreatedDate = DateTime.UtcNow,
                         Active = true,
-                        IsDeleted = false
+                        IsDelete = false
                     },
                 };
 

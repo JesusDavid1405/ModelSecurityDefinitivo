@@ -1,8 +1,9 @@
 using Data.Core;
+using Entity.Model;
 
 namespace Business.Strategies;
 
-public class DeletedPersistentStrategy<T> : IDeletedStrategy where T : class
+public class DeletedPersistentStrategy<T> : IDeletedStrategy where T : BaseModel
 {
     private readonly DataBase<T> _dataBase;
 

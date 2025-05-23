@@ -1,8 +1,9 @@
 using Entity.Enums;
+using Entity.Model;
 
 namespace Business.Strategies;
 
-public class DeleteStrategyFactory<T> where T : class
+public class DeleteStrategyFactory<T> where T : BaseModel
 {
     private readonly Data.Core.DataBase<T> _dataBase;
 

@@ -19,7 +19,7 @@ public class UserRepository : DataBase<User>, IUserRepository
     public override async Task<IEnumerable<User>> GetAll()
     {
         return await _context.Set<User>()
-                        .Where(u => !u.IsDeleted)
+                        .Where(u => !u.IsDelete)
                         .Include(u => u.Person)
                         .ToListAsync();   
     }
@@ -27,7 +27,7 @@ public class UserRepository : DataBase<User>, IUserRepository
     public override async Task<User?> GetById(int id)
     {
         return await _context.Set<User>()
-                        .Where(u => !u.IsDeleted)
+                        .Where(u => !u.IsDelete)
                         .Include(u => u.Person)
                         .FirstOrDefaultAsync(u => u.Id == id);
     }

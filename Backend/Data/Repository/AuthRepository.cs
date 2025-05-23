@@ -41,7 +41,7 @@ public class AuthRepository : IAuthRepository
     {
         var rolUser = await _context.RolUser
             .Include(r => r.Rol)
-            .Where(r => r.UserId == id && !r.IsDeleted)
+            .Where(r => r.UserId == id && !r.IsDelete)
             .FirstOrDefaultAsync();
 
         return rolUser;
@@ -66,7 +66,7 @@ public class AuthRepository : IAuthRepository
     {
         try
         {
-            person.IsDeleted = false;
+            person.IsDelete = false;
             await _context.Set<Person>().AddAsync(person);
             await _context.SaveChangesAsync();
             return person;
@@ -80,7 +80,7 @@ public class AuthRepository : IAuthRepository
     {
         try
         {
-            user.IsDeleted = false;
+            user.IsDelete = false;
             var persons = await _context.Set<User>().AddAsync(user);
             await _context.SaveChangesAsync();
             return true;

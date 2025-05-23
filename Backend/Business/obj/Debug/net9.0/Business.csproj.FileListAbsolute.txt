@@ -16,21 +16,3 @@ C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Business\obj\Debug\net9.0\
 C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Business\obj\Debug\net9.0\refint\Business.dll
 C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Business\obj\Debug\net9.0\Business.pdb
 C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Business\obj\Debug\net9.0\ref\Business.dll
-C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Business\bin\Debug\net9.0\Business.deps.json
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Business\bin\Debug\net9.0\Business.dll
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Business\bin\Debug\net9.0\Business.pdb
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Business\bin\Debug\net9.0\Data.dll
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Business\bin\Debug\net9.0\Entity.dll
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Business\bin\Debug\net9.0\Data.pdb
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Business\bin\Debug\net9.0\Entity.pdb
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Business\obj\Debug\net9.0\Business.csproj.AssemblyReference.cache
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Business\obj\Debug\net9.0\Business.GeneratedMSBuildEditorConfig.editorconfig
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Business\obj\Debug\net9.0\Business.AssemblyInfoInputs.cache
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Business\obj\Debug\net9.0\Business.AssemblyInfo.cs
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Business\obj\Debug\net9.0\Business.csproj.CoreCompileInputs.cache
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Business\obj\Debug\net9.0\Business.sourcelink.json
-C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Business\obj\Debug\net9.0\Business.csproj.Up2Date
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Business\obj\Debug\net9.0\Business.dll
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Business\obj\Debug\net9.0\refint\Business.dll
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Business\obj\Debug\net9.0\Business.pdb
-C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Business\obj\Debug\net9.0\ref\Business.dll

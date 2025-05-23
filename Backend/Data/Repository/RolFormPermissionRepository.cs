@@ -19,7 +19,7 @@ public class RolFormPermissionRepository : DataBase<RolFormPermission>, IRolForm
      public override async Task<IEnumerable<RolFormPermission>> GetAll()
     {
         return await _context.Set<RolFormPermission>()
-                        .Where(rfp => !rfp.IsDeleted)
+                        .Where(rfp => !rfp.IsDelete)
                         .Include(rfp => rfp.Rol)
                         .Include(rfp => rfp.Form)
                         .Include(rfp => rfp.Permission)
@@ -29,7 +29,7 @@ public class RolFormPermissionRepository : DataBase<RolFormPermission>, IRolForm
     public override async Task<RolFormPermission?> GetById(int id)
     {
         return await _context.Set<RolFormPermission>()
-                        .Where(rfp => !rfp.IsDeleted)
+                        .Where(rfp => !rfp.IsDelete)
                         .Include(rfp => rfp.Rol)
                         .Include(rfp => rfp.Form)
                         .Include(rfp => rfp.Permission)

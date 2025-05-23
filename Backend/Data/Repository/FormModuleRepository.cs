@@ -20,7 +20,7 @@ public class FormModuleRepository : DataBase<FormModule>, IFormModuleRepository
     public override async Task<IEnumerable<FormModule>> GetAll()
     {
         return await _context.Set<FormModule>()
-                        .Where(fm => !fm.IsDeleted)
+                        .Where(fm => !fm.IsDelete)
                         .Include(fm => fm.Form)
                         .Include(fm => fm.Module)
                         .ToListAsync();   
@@ -29,7 +29,7 @@ public class FormModuleRepository : DataBase<FormModule>, IFormModuleRepository
     public override async Task<FormModule?> GetById(int id)
     {
         return await _context.Set<FormModule>()
-                        .Where(fm => !fm.IsDeleted)
+                        .Where(fm => !fm.IsDelete)
                         .Include(fm => fm.Form)
                         .Include(fm => fm.Module)
                         .FirstOrDefaultAsync(fm => fm.Id == id);

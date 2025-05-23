@@ -1,8 +1,9 @@
+using Microsoft.EntityFrameworkCore.Storage;
+
 namespace Entity.Model;
 
-public class FormModule
+public class FormModule : BaseModel
 {
-    public int Id {get; set;}
 
     public Form Form {get; set;}
     public int FormId {get; set;}
@@ -10,5 +11,4 @@ public class FormModule
     public Module Module {get; set;}
     public int ModuleId {get; set;}
 
-    public bool IsDeleted {get; set;}
 }

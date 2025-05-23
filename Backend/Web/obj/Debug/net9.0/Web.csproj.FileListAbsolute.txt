@@ -187,8 +187,8 @@ c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\B
 c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Web\bin\Debug\net9.0\appsettings.json
 c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Web\bin\Debug\net9.0\Web.staticwebassets.endpoints.json
 c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Web\bin\Debug\net9.0\Web.exe
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Web\bin\Debug\net9.0\Web.deps.json
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Web\bin\Debug\net9.0\Web.runtimeconfig.json
+C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Web\bin\Debug\net9.0\Web.deps.json
+C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Web\bin\Debug\net9.0\Web.runtimeconfig.json
 c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Web\bin\Debug\net9.0\Web.dll
 c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Web\bin\Debug\net9.0\Web.pdb
 c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Web\bin\Debug\net9.0\AutoMapper.dll
@@ -366,9 +366,9 @@ c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\B
 c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Web\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.Web.props
 c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Web\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.Web.props
 c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Web\obj\Debug\net9.0\staticwebassets.pack.json
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Web\obj\Debug\net9.0\Web.csproj.Up2Date
+C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Web\obj\Debug\net9.0\Web.csproj.Up2Date
 c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Web\obj\Debug\net9.0\Web.dll
 c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Web\obj\Debug\net9.0\refint\Web.dll
 c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Web\obj\Debug\net9.0\Web.pdb
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Web\obj\Debug\net9.0\Web.genruntimeconfig.cache
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Web\obj\Debug\net9.0\ref\Web.dll
+C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Web\obj\Debug\net9.0\Web.genruntimeconfig.cache
+C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Web\obj\Debug\net9.0\ref\Web.dll

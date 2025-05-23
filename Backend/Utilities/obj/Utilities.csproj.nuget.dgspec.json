@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dfier\\OneDrive\\Desktop\\practicas lenguajes\\c#\\ModelSecurityDefinitivo\\Backend\\Utilities\\Utilities.csproj": {}
+    "c:\\Users\\dfier\\OneDrive\\Desktop\\practicas lenguajes\\c#\\ModelSecurityDefinitivo\\Backend\\Utilities\\Utilities.csproj": {}
   },
   "projects": {
     "C:\\Users\\dfier\\OneDrive\\Desktop\\practicas lenguajes\\c#\\ModelSecurityDefinitivo\\Backend\\Entity\\Entity.csproj": {
@@ -95,14 +95,14 @@
         }
       }
     },
-    "C:\\Users\\dfier\\OneDrive\\Desktop\\practicas lenguajes\\c#\\ModelSecurityDefinitivo\\Backend\\Utilities\\Utilities.csproj": {
+    "c:\\Users\\dfier\\OneDrive\\Desktop\\practicas lenguajes\\c#\\ModelSecurityDefinitivo\\Backend\\Utilities\\Utilities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dfier\\OneDrive\\Desktop\\practicas lenguajes\\c#\\ModelSecurityDefinitivo\\Backend\\Utilities\\Utilities.csproj",
+        "projectUniqueName": "c:\\Users\\dfier\\OneDrive\\Desktop\\practicas lenguajes\\c#\\ModelSecurityDefinitivo\\Backend\\Utilities\\Utilities.csproj",
         "projectName": "Utilities",
-        "projectPath": "C:\\Users\\dfier\\OneDrive\\Desktop\\practicas lenguajes\\c#\\ModelSecurityDefinitivo\\Backend\\Utilities\\Utilities.csproj",
+        "projectPath": "c:\\Users\\dfier\\OneDrive\\Desktop\\practicas lenguajes\\c#\\ModelSecurityDefinitivo\\Backend\\Utilities\\Utilities.csproj",
         "packagesPath": "C:\\Users\\dfier\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dfier\\OneDrive\\Desktop\\practicas lenguajes\\c#\\ModelSecurityDefinitivo\\Backend\\Utilities\\obj\\",
+        "outputPath": "c:\\Users\\dfier\\OneDrive\\Desktop\\practicas lenguajes\\c#\\ModelSecurityDefinitivo\\Backend\\Utilities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

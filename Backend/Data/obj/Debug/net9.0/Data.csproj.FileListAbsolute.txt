@@ -14,19 +14,3 @@ C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Data\obj\Debug\net9.0\Data
 C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Data\obj\Debug\net9.0\refint\Data.dll
 C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Data\obj\Debug\net9.0\Data.pdb
 C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Data\obj\Debug\net9.0\ref\Data.dll
-C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Data\bin\Debug\net9.0\Data.deps.json
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Data\bin\Debug\net9.0\Data.dll
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Data\bin\Debug\net9.0\Data.pdb
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Data\bin\Debug\net9.0\Entity.dll
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Data\bin\Debug\net9.0\Entity.pdb
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Data\obj\Debug\net9.0\Data.csproj.AssemblyReference.cache
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Data\obj\Debug\net9.0\Data.GeneratedMSBuildEditorConfig.editorconfig
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Data\obj\Debug\net9.0\Data.AssemblyInfoInputs.cache
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Data\obj\Debug\net9.0\Data.AssemblyInfo.cs
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Data\obj\Debug\net9.0\Data.csproj.CoreCompileInputs.cache
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Data\obj\Debug\net9.0\Data.sourcelink.json
-C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Data\obj\Debug\net9.0\Data.csproj.Up2Date
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Data\obj\Debug\net9.0\Data.dll
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Data\obj\Debug\net9.0\refint\Data.dll
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Data\obj\Debug\net9.0\Data.pdb
-C:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Data\obj\Debug\net9.0\ref\Data.dll

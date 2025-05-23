@@ -151,8 +151,6 @@ public class AuthController : ControllerBase
             dto.Name = ValitadionHelpers.NormalizeName(dto.Name);
             dto.LastName = ValitadionHelpers.NormalizeName(dto.LastName);
 
-            Console.WriteLine("IdToken recibido: " + dto.IdToken);
-
             var payload = await GoogleJsonWebSignature.ValidateAsync(dto.IdToken, new GoogleJsonWebSignature.ValidationSettings
             {
                 Audience = new[] { _configuration["Google:ClientId"] }
@@ -168,6 +166,7 @@ public class AuthController : ControllerBase
 
             var AddUserPerson = new RegisterDTO
             {
+                Username = dto.Username,
                 Email = dto.Email,
                 Password = randomPassword,
                 CreatedDate = DateTime.UtcNow,
@@ -181,8 +180,6 @@ public class AuthController : ControllerBase
             };
 
             await _authServices.AddUserPerson(AddUserPerson);
-
-            // Enviar contraseña en correo de bienvenida
             await _email.WelcomenUser(AddUserPerson.Email, randomPassword);
 
             var token = await _jwt.GenerateJWT(new LoginDTO

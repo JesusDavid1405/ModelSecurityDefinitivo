@@ -14,19 +14,3 @@ C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0
 C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\refint\Utilities.dll
 C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\Utilities.pdb
 C:\Users\SENA\Desktop\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\ref\Utilities.dll
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\bin\Debug\net9.0\Utilities.deps.json
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\bin\Debug\net9.0\Utilities.dll
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\bin\Debug\net9.0\Utilities.pdb
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\bin\Debug\net9.0\Entity.dll
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\bin\Debug\net9.0\Entity.pdb
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\Utilities.csproj.AssemblyReference.cache
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\Utilities.GeneratedMSBuildEditorConfig.editorconfig
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\Utilities.AssemblyInfoInputs.cache
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\Utilities.AssemblyInfo.cs
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\Utilities.csproj.CoreCompileInputs.cache
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\Utilities.sourcelink.json
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\Utilities.csproj.Up2Date
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\Utilities.dll
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\refint\Utilities.dll
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\Utilities.pdb
-c:\Users\dfier\OneDrive\Desktop\practicas lenguajes\c#\ModelSecurityDefinitivo\Backend\Utilities\obj\Debug\net9.0\ref\Utilities.dll
